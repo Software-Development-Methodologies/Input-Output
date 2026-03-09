@@ -75,3 +75,97 @@
 # INSTALL
 
 ## Java I/O
+
+This guide explains how to set up, build, and run the project on your local machine.
+
+---
+
+## 1. Prerequisites
+
+Before you begin, ensure the following software is installed on your system:
+
+- **Java Development Kit (JDK):** Version 8 or higher is recommended.
+- **Integrated Development Environment (IDE):**  
+  NetBeans is recommended for this course. However, any simple editor such as **VS Code** or **Notepad++** can also be used.
+
+---
+
+## 2. Project Structure
+
+Organize your project so that each exercise corresponds to a separate program.
+
+### 2.1 Exercises Included
+- **Exercise 2.1:** Standard Input/Output logic (student grades).
+- **Exercise 2.2:** File Copying utility.
+- **Exercise 2.3:** Character statistics analyzer.
+- **Exercise 2.4:** Fibonacci generator and reader.
+
+---
+
+## 3. Building the Project
+
+### 3.1 Using NetBeans
+1. Create a new **Java Ant Project**
+2. Copy the source code into the generated `.java` files.
+3. Click the **Clean and Build** button (hammer and broom icon).
+
+---
+
+## 4. Using Command Line
+
+Navigate to the project directory and compile all Java files:
+```bash
+javac *.java
+```
+
+---
+
+## 5. Running the Exercises
+Each exercise can be executed independently from the command line.
+
+| Exercise           | Run Command           | Expected Input                                               |
+|--------------------|-----------------------|--------------------------------------------------------------|
+| 2.1 – Grades       | java GradeProcessor   | Student ID, Course Name, Grade (type 000000 to exit)        |
+| 2.2 – Copy         | java FileCopy         | Source file path and destination file path                  |
+| 2.3 – Stats        | java FileStats        | Full path of the text file to analyze                       |
+| 2.4 – Fibonacci    | java FibonacciTask    | No input required (file generated automatically)            |
+
+---
+
+## 6. Development Notes
+
+### 6.1 NetBeans Users
+If text files are located in the Project Root directory, only the filename needs to be provided.
+
+Example:
+```bash
+input.txt
+```
+
+### 6.2 Editor Users
+If files are located in the same folder as the `.class` files, the filename alone is sufficient.
+
+---
+
+## 7. Exception Handling
+- The programs rely on exception handling rather than pre-validating file paths.
+- If a file cannot be found, the program will display a clear error message in the console.
+
+Example:
+```bash
+Error: File not found
+```
+
+---
+
+## 8. Character Encoding
+For Exercise 2.3, ensure the text file encoding supports Greek characters, including:
+```bash
+Alpha (Α, α)
+
+Gamma (Γ, γ)
+
+Omega (Ω, ω)
+```
+
+Using UTF-8 encoding is recommended to ensure accurate character statistics.
