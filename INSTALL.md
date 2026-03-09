@@ -88,6 +88,15 @@ Before you begin, ensure the following software is installed on your system:
 - **Integrated Development Environment (IDE):**  
   NetBeans is recommended for this course. However, any simple editor such as **VS Code** or **Notepad++** can also be used.
 
+### 1.1 Clone the Repository
+
+Open your terminal or command prompt and run:
+
+```bash
+git clone https://github.com/Software-Development-Methodologies/Input-Output.git
+cd Input-Output/src
+```
+
 ---
 
 ## 2. Project Structure
